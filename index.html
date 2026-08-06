@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shanmuka Gaddam | .NET Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Shanmuka Gaddam - .NET Full Stack Developer with 4 years of experience building scalable microservices and financial APIs using ASP.NET Core, C#, SQL Server, Redis, and Azure." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Site Header Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#main" class="brand">
+        <span class="brand-logo">SG</span>
+        <span class="brand-text">Shanmuka Gaddam<span class="accent-dot">.</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#main" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Work</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Capabilities</a>
+        <a href="#open-source" class="nav-link">GitHub</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline btn-sm" id="open-resume-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          Resume
+        </button>
+        <button class="mobile-menu-button" id="mobile-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-drawer">
+      <a href="#main" class="mobile-link">Home</a>
+      <a href="#projects" class="mobile-link">Work</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#skills" class="mobile-link">Capabilities</a>
+      <a href="#open-source" class="mobile-link">GitHub</a>
+      <a href="#resume" class="mobile-link">Resume</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="status-indicator"></span>
+            <span>Available for .NET Full Stack &amp; Backend Engineer Roles</span>
+          </div>
+
+          <p class="eyebrow">Shanmuka Gaddam</p>
+          <h1 class="hero-title">.NET Full Stack Developer building scalable microservices &amp; financial APIs.</h1>
+          <p class="hero-copy">
+            Backend Engineer with 4 years of experience building scalable microservices and financial APIs using ASP.NET Core, C#, SQL Server, Redis, and Azure. Experienced in distributed systems, event-driven architectures, transaction processing, and database optimization.
+          </p>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>4 Years</strong>
+              <span>Industry Experience</span>
+            </div>
+            <div class="hero-stat">
+              <strong>50K+</strong>
+              <span>Daily Banking Transactions</span>
+            </div>
+            <div class="hero-stat">
+              <strong>&lt;700ms</strong>
+              <span>Optimized API Response Time</span>
+            </div>
+            <div class="hero-stat">
+              <strong>100%</strong>
+              <span>ACID Transaction Accuracy</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">
+              View Projects <span aria-hidden="true">→</span>
+            </a>
+            <button class="button button-secondary" id="hero-resume-trigger">
+              View Resume
+            </button>
+            <a href="https://github.com/shannug98" target="_blank" rel="noreferrer" class="button button-ghost">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card">
+            <div class="profile-avatar-wrapper">
+              <img src="avatar.jpg" alt="Shanmuka Gaddam" class="profile-img" />
+              <div class="avatar-glow"></div>
+            </div>
+            
+            <div class="tech-stack-floating">
+              <span class="badge-tag">.NET Core 8</span>
+              <span class="badge-tag">C#</span>
+              <span class="badge-tag">SQL Server</span>
+              <span class="badge-tag">Redis</span>
+              <span class="badge-tag">Azure</span>
+              <span class="badge-tag">React.js</span>
+            </div>
+
+            <div class="code-snippet-box">
+              <div class="code-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="code-title">TransactionService.cs</span>
+              </div>
+              <pre class="code-body"><code><span class="token-keyword">public async Task</span>&lt;<span class="token-type">TransferResult</span>&gt; <span class="token-func">ProcessTransferAsync</span>(<span class="token-type">TransferRequest</span> request)
+{
+    <span class="token-keyword">using var</span> lockHandle = <span class="token-keyword">await</span> _redis.<span class="token-func">AcquireLockAsync</span>(request.IdempotencyKey);
+    <span class="token-keyword">var</span> result = <span class="token-keyword">await</span> _ledgerService.<span class="token-func">ExecuteDoubleEntryAsync</span>(request);
+    <span class="token-keyword">return</span> result;
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Featured Work) -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Featured Work</p>
+          <h2 class="section-title">Production Systems &amp; Product Architecture</h2>
+          <p class="lead">Case studies detailing the architecture, engineering decisions, and measurable outcomes of banking and enterprise systems I've built.</p>
+        </div>
+
+        <div class="project-showcase">
+
+          <!-- Project 1: Flagship Payroll Management System -->
+          <article class="project-editorial">
+            <div class="project-visual">
+              <div class="visual-card-wrapper">
+                <div class="visual-badge">FLAGSHIP PROJECT</div>
+                <div class="visual-terminal">
+                  <div class="terminal-bar">
+                    <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+                    <span class="t-title">shannug98 / Payroll-Management-System</span>
+                  </div>
+                  <div class="terminal-content">
+                    <div class="metric-row">
+                      <div class="m-card">
+                        <span class="m-label">Database</span>
+                        <span class="m-val">SQL Server &amp; EF Core</span>
+                      </div>
+                      <div class="m-card">
+                        <span class="m-label">Security</span>
+                        <span class="m-val">JWT &amp; RBAC</span>
+                      </div>
+                    </div>
+                    <div class="metric-row">
+                      <div class="m-card">
+                        <span class="m-label">Frontend</span>
+                        <span class="m-val">React.js (Axios/Hooks)</span>
+                      </div>
+                      <div class="m-card">
+                        <span class="m-label">Architecture</span>
+                        <span class="m-val">Clean Architecture</span>
+                      </div>
+                    </div>
+                    <div class="terminal-log">
+                      <span class="log-info">[INFO]</span> Clean Architecture initialized with ASP.NET Core 8.<br/>
+                      <span class="log-success">[SUCCESS]</span> Payroll &amp; attendance calculation verified.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <p class="eyebrow">Full-Stack Enterprise System</p>
+              <h3>Payroll Management System</h3>
+              <p>
+                Full-stack payroll management application using ASP.NET Core 8, React.js, Entity Framework Core, and SQL Server built following Clean Architecture principles.
+              </p>
+
+              <strong class="focus-heading">Engineering Focus</strong>
+              <ul class="focus-list">
+                <li>Designed secure RESTful APIs for employee management, attendance, leave, payroll processing, and salary generation</li>
+                <li>Implemented Role-Based Access Control (RBAC) with JWT Bearer authentication</li>
+                <li>Optimized SQL Server queries and Entity Framework Core operations to improve processing performance</li>
+                <li>Built responsive React.js user interfaces using Hooks and Axios, integrating Swagger, Postman, Git, and EF Core Migrations</li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">ASP.NET Core 8</span>
+                <span class="tag">C#</span>
+                <span class="tag">EF Core</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">React.js</span>
+                <span class="tag">JWT &amp; RBAC</span>
+                <span class="tag">Clean Architecture</span>
+              </div>
+
+              <p class="impact">
+                <strong>Result:</strong> Delivered a fully responsive, secure full-stack enterprise payroll engine with optimized query execution and zero calculation drift.
+              </p>
+
+              <div class="project-links">
+                <button class="button button-secondary modal-trigger" data-modal="modal-payroll">
+                  View Case Study <span aria-hidden="true">→</span>
+                </button>
+                <a href="https://github.com/shannug98/Payroll-Management-System" target="_blank" rel="noreferrer" class="button button-ghost">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Banking & Financial Microservices -->
+          <article class="project-editorial">
+            <div class="project-visual">
+              <div class="visual-card-wrapper alt-theme">
+                <div class="visual-badge">FINTECH MICROSERVICES</div>
+                <div class="architecture-diagram">
+                  <div class="arch-node">API Gateway / OAuth 2.0 / Azure AD</div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-row">
+                    <div class="arch-node sub">Account Service</div>
+                    <div class="arch-node sub">Fund Transfer</div>
+                    <div class="arch-node sub">Ledger Engine</div>
+                  </div>
+                  <div class="arch-arrow">↓</div>
+                  <div class="arch-node accent">Azure Service Bus &amp; Redis Lock (50K+ txns/day)</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <p class="eyebrow">Banking &amp; Financial Platform</p>
+              <h3>Scalable Banking &amp; Transaction Microservices</h3>
+              <p>
+                High-throughput banking and transaction processing microservices platform supporting 50K+ daily financial transactions with double-entry ledger accuracy.
+              </p>
+
+              <strong class="focus-heading">Engineering Focus</strong>
+              <ul class="focus-list">
+                <li>Designed secure RESTful APIs for account management, beneficiary management, balance enquiries, and fund transfers</li>
+                <li>Implemented double-entry ledger and ACID-compliant transaction workflows ensuring auditability</li>
+                <li>Developed asynchronous event-driven solutions using Azure Service Bus for reliable inter-service communication</li>
+                <li>Applied Redis distributed locking and idempotent processing to prevent duplicate transactions under concurrent loads</li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">ASP.NET Core 8</span>
+                <span class="tag">C#</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Azure Service Bus</span>
+                <span class="tag">Docker</span>
+              </div>
+
+              <p class="impact">
+                <strong>Result:</strong> Reduced SQL response time from 1.8s to under 700ms while maintaining 100% ACID transaction compliance for 50K+ daily requests.
+              </p>
+
+              <div class="project-links">
+                <button class="button button-secondary modal-trigger" data-modal="modal-banking">
+                  View Case Study <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Enterprise Retail System (IKEA Client) -->
+          <article class="project-editorial">
+            <div class="project-visual">
+              <div class="visual-card-wrapper dark-theme">
+                <div class="visual-badge">ENTERPRISE RETAIL</div>
+                <div class="telemetry-box">
+                  <div class="tel-line green"><span>Client:</span> <strong>IKEA Retail Platform</strong></div>
+                  <div class="tel-line green"><span>Batch Jobs Monitored:</span> <strong>100% SLA Compliance</strong></div>
+                  <div class="tel-line blue"><span>SQL Optimization:</span> <strong>High Throughput Query Tuning</strong></div>
+                  <div class="tel-chart">
+                    <div class="bar" style="height:70%"></div>
+                    <div class="bar" style="height:90%"></div>
+                    <div class="bar" style="height:60%"></div>
+                    <div class="bar" style="height:100%"></div>
+                    <div class="bar" style="height:75%"></div>
+                    <div class="bar" style="height:85%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <p class="eyebrow">Capgemini Client Engineering</p>
+              <h3>Enterprise Retail Applications Maintenance</h3>
+              <p>
+                Enterprise retail application support, daily batch job monitoring, database record reconciliation, and SQL Server query optimization for the global IKEA client.
+              </p>
+
+              <strong class="focus-heading">Engineering Focus</strong>
+              <ul class="focus-list">
+                <li>Supported and maintained enterprise retail systems ensuring high application availability and operational stability</li>
+                <li>Wrote and optimized complex SQL Server queries to analyze transactional data and resolve production bottlenecks</li>
+                <li>Executed SQL scripts for data correction, reconciliation, and production data fixes maintaining strict data compliance</li>
+                <li>Performed root-cause analysis on monitoring alerts and application logs, resolving incidents within agreed SLA timelines</li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">C#</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Monitoring Tools</span>
+                <span class="tag">Agile</span>
+              </div>
+
+              <p class="impact">
+                <strong>Result:</strong> Maintained high availability for global retail operations and successfully resolved production data issues strictly within SLA bounds.
+              </p>
+
+              <div class="project-links">
+                <button class="button button-secondary modal-trigger" data-modal="modal-ikea">
+                  View Case Study <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Experience Section -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Work Experience</p>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="lead">4 years of experience building microservices, banking APIs, and database optimizations across global enterprises.</p>
+        </div>
+
+        <div class="experience-list">
+
+          <!-- Bienes Technosoft Chennai -->
+          <article class="experience-item">
+            <div class="exp-header">
+              <div>
+                <h3>Software Engineer</h3>
+                <span class="company">Bienes Technosoft | Chennai, India</span>
+              </div>
+              <span class="period">Jul 2025 – Jun 2026</span>
+            </div>
+            <div class="contribution">
+              <ul class="focus-list">
+                <li>Optimized SQL Server queries, indexing, and EF Core, reducing API response time from 1.8s to under 700ms.</li>
+                <li>Implemented Redis distributed locking and idempotent processing to prevent duplicate transactions during concurrent requests.</li>
+                <li>Integrated OAuth 2.0, JWT, MFA, and Azure AD RBAC to strengthen API security.</li>
+                <li>Resolved production issues, improved backend reliability, and supported Azure-based deployments through CI/CD.</li>
+                <li>Worked with cross-functional teams to enhance system scalability, performance, and operational stability.</li>
+              </ul>
+            </div>
+            <p class="outcome">
+              <strong>Outcome:</strong> Cut API latency by over 60% and secured high-concurrency backend workflows with Redis distributed locking and Azure AD RBAC.
+            </p>
+            <div class="tags">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">C#</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Azure AD</span>
+              <span class="tag">OAuth 2.0 / JWT</span>
+              <span class="tag">CI/CD</span>
+            </div>
+          </article>
+
+          <!-- Bienes Technosoft UK -->
+          <article class="experience-item">
+            <div class="exp-header">
+              <div>
+                <h3>Software Engineer</h3>
+                <span class="company">Bienes Technosoft | Manchester, UK</span>
+              </div>
+              <span class="period">May 2024 – Jun 2025</span>
+            </div>
+            <div class="contribution">
+              <ul class="focus-list">
+                <li>Developed and maintained scalable banking and transaction processing microservices using ASP.NET Core 8, C#, SQL Server, Redis, and Azure in a distributed architecture.</li>
+                <li>Designed and implemented secure RESTful APIs for account management, beneficiary management, balance enquiries, and fund transfers, supporting 50K+ daily financial transactions.</li>
+                <li>Implemented double-entry ledger and ACID-compliant transaction workflows to ensure financial accuracy, consistency, and auditability across payment operations.</li>
+                <li>Developed asynchronous event-driven solutions using Azure Service Bus, enabling reliable communication between microservices and improving transaction processing efficiency.</li>
+                <li>Collaborated with solution architects and cross-functional teams to design backend services, translate business requirements into technical solutions, and deliver new banking features.</li>
+                <li>Participated in code reviews, sprint planning, API design discussions, and CI/CD deployments following Agile practices.</li>
+              </ul>
+            </div>
+            <p class="outcome">
+              <strong>Outcome:</strong> Successfully scaled banking microservices to process 50K+ daily transactions with 100% double-entry ledger auditability.
+            </p>
+            <div class="tags">
+              <span class="tag">ASP.NET Core 8</span>
+              <span class="tag">C#</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Azure Service Bus</span>
+              <span class="tag">Microservices</span>
+              <span class="tag">Agile</span>
+            </div>
+          </article>
+
+          <!-- Capgemini -->
+          <article class="experience-item">
+            <div class="exp-header">
+              <div>
+                <h3>Software Developer</h3>
+                <span class="company">Capgemini Technology Services Pvt Ltd | Hyderabad, India</span>
+              </div>
+              <span class="period">Oct 2020 – July 2022</span>
+            </div>
+            <div class="contribution">
+              <ul class="focus-list">
+                <li>Supported and maintained enterprise retail applications for the IKEA client, ensuring high application availability and operational stability.</li>
+                <li>Monitored daily batch jobs, scheduled processes, and application health using enterprise monitoring tools, investigating failures and ensuring successful completion of business-critical workflows.</li>
+                <li>Wrote and optimized complex SQL Server queries to analyze transactional data, troubleshoot production issues, validate business data, and improve query performance.</li>
+                <li>Executed SQL scripts for data correction, reconciliation, and production data fixes while maintaining data integrity and compliance with business requirements.</li>
+                <li>Performed root cause analysis by investigating application logs, database records, and monitoring alerts, resolving production incidents within agreed SLA timelines.</li>
+                <li>Validated backend services and REST APIs using Postman, collaborating with development and QA teams to verify fixes before production deployment.</li>
+              </ul>
+            </div>
+            <p class="outcome">
+              <strong>Outcome:</strong> Ensured continuous high availability for IKEA global retail systems and resolved complex production data issues strictly within SLA limits.
+            </p>
+            <div class="tags">
+              <span class="tag">C#</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">Postman</span>
+              <span class="tag">Root Cause Analysis</span>
+              <span class="tag">Enterprise Monitoring</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Capabilities Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Capabilities</p>
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="cat-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+              <h3>Backend Development</h3>
+            </div>
+            <ul>
+              <li>.NET Core 6 / 7 / 8</li>
+              <li>ASP.NET Web API</li>
+              <li>C# Language</li>
+              <li>Entity Framework Core</li>
+              <li>LINQ &amp; Query Tuning</li>
+              <li>Microservices Architecture</li>
+              <li>SignalR WebSockets</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <div class="cat-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              <h3>Cloud &amp; DevOps</h3>
+            </div>
+            <ul>
+              <li>Microsoft Azure (App Service)</li>
+              <li>Azure Service Bus &amp; AD</li>
+              <li>Azure DevOps &amp; Pipelines</li>
+              <li>CI/CD Automation</li>
+              <li>Docker Containerization</li>
+              <li>MSSQL &amp; Query Optimisation</li>
+              <li>EF Core Migrations</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <div class="cat-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <h3>Architecture &amp; Security</h3>
+            </div>
+            <ul>
+              <li>RESTful APIs &amp; MVC</li>
+              <li>SOLID Principles</li>
+              <li>Clean Architecture</li>
+              <li>OAuth 2.0 / JWT Auth</li>
+              <li>Role-Based Access Control (RBAC)</li>
+              <li>Distributed Locking (Redis)</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <div class="cat-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <h3>Frontend &amp; Tools</h3>
+            </div>
+            <ul>
+              <li>React.js (Axios &amp; Hooks)</li>
+              <li>CSS &amp; Bootstrap</li>
+              <li>Swagger &amp; OpenAPI</li>
+              <li>Postman API Testing</li>
+              <li>Git / GitHub &amp; Jira</li>
+              <li>Confluence &amp; Agile/Scrum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Source Section -->
+    <section class="section section-alt" id="open-source">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Open Source</p>
+          <h2 class="section-title">Engineering Work &amp; Repositories</h2>
+          <p class="lead">Selected repositories and open-source backend systems on GitHub.</p>
+        </div>
+
+        <div class="integration-grid">
+          <a href="https://github.com/shannug98/Payroll-Management-System" target="_blank" rel="noreferrer" class="integration-card featured-repo">
+            <div class="repo-card-header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <h3>Payroll-Management-System</h3>
+            </div>
+            <p>
+              Payroll management system using C++, ASP.NET Core 8, React.js, EF Core, and SQL Server following Clean Architecture principles.
+            </p>
+            <div class="integration-meta">
+              <span class="lang"><span class="lang-color cs"></span> C# / C++</span>
+              <span>★ 1</span>
+              <span>⑂ 0</span>
+              <span>Updated Aug 2026</span>
+            </div>
+            <div class="repo-action">
+              View Repository <span aria-hidden="true">→</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/shannug98" target="_blank" rel="noreferrer" class="integration-card">
+            <div class="repo-card-header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <h3>GitHub Profile @shannug98</h3>
+            </div>
+            <p>
+              Explore additional code repositories, backend microservices, SQL query optimizations, and algorithms on GitHub.
+            </p>
+            <div class="integration-meta">
+              <span>GitHub Profile @shannug98</span>
+            </div>
+            <div class="repo-action">
+              Explore Profile <span aria-hidden="true">→</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Resume Section -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Official Resume</p>
+          <h2 class="section-title">Shanmuka Gaddam — Resume</h2>
+          <p class="lead">Complete resume copy matching your official curriculum vitae.</p>
+        </div>
+
+        <div class="resume-paper-card">
+          <div class="resume-top-bar">
+            <div>
+              <h2>SHANMUKA GADDAM</h2>
+              <p class="resume-role">.NET Full Stack Developer</p>
+              <p class="text-muted" style="font-size:0.9rem; margin-top:0.25rem;">
+                📍 Hyderabad, India &nbsp;|&nbsp; 📞 +91 8019013757 &nbsp;|&nbsp; ✉️ shanmukagaddam98@gmail.com
+              </p>
+            </div>
+            <div class="resume-actions">
+              <button class="button button-primary btn-sm" id="download-resume-pdf">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Print / Save PDF
+              </button>
+            </div>
+          </div>
+
+          <div class="resume-grid">
+            <div class="resume-col main">
+              <div class="r-section">
+                <h4 class="r-title">Professional Summary</h4>
+                <p>
+                  Backend Engineer with 4 years of experience building scalable microservices and financial APIs using ASP.NET Core, C#, SQL Server, Redis, and Azure. Experienced in distributed systems, event-driven architectures, transaction processing, and database optimization for enterprise applications. Strong background in REST APIs, microservices, authentication systems, and high-concurrency backend workflows.
+                </p>
+              </div>
+
+              <div class="r-section">
+                <h4 class="r-title">Work Experience</h4>
+                
+                <div class="r-exp-item">
+                  <div class="r-exp-meta">
+                    <strong>Software Engineer</strong>
+                    <span>Jul 2025 – Jun 2026</span>
+                  </div>
+                  <div class="r-company">Bienes Technosoft | Chennai, India</div>
+                  <ul>
+                    <li>Optimized SQL Server queries, indexing, and EF Core, reducing API response time from 1.8s to under 700ms.</li>
+                    <li>Implemented Redis distributed locking and idempotent processing to prevent duplicate transactions during concurrent requests.</li>
+                    <li>Integrated OAuth 2.0, JWT, MFA, and Azure AD RBAC to strengthen API security.</li>
+                    <li>Resolved production issues, improved backend reliability, and supported Azure-based deployments through CI/CD.</li>
+                    <li>Worked with cross-functional teams to enhance system scalability, performance, and operational stability.</li>
+                  </ul>
+                </div>
+
+                <div class="r-exp-item">
+                  <div class="r-exp-meta">
+                    <strong>Software Engineer</strong>
+                    <span>May 2024 – Jun 2025</span>
+                  </div>
+                  <div class="r-company">Bienes Technosoft | Manchester, UK</div>
+                  <ul>
+                    <li>Developed and maintained scalable banking and transaction processing microservices using ASP.NET Core 8, C#, SQL Server, Redis, and Azure in a distributed architecture.</li>
+                    <li>Designed and implemented secure RESTful APIs for account management, beneficiary management, balance enquiries, and fund transfers, supporting 50K+ daily financial transactions.</li>
+                    <li>Implemented double-entry ledger and ACID-compliant transaction workflows to ensure financial accuracy, consistency, and auditability across payment operations.</li>
+                    <li>Developed asynchronous event-driven solutions using Azure Service Bus, enabling reliable communication between microservices and improving transaction processing efficiency.</li>
+                    <li>Collaborated with solution architects and cross-functional teams to design backend services, translate business requirements into technical solutions, and deliver new banking features.</li>
+                    <li>Participated in code reviews, sprint planning, API design discussions, and CI/CD deployments following Agile development practices.</li>
+                  </ul>
+                </div>
+
+                <div class="r-exp-item">
+                  <div class="r-exp-meta">
+                    <strong>Software Developer</strong>
+                    <span>Oct 2020 – July 2022</span>
+                  </div>
+                  <div class="r-company">Capgemini Technology Services Pvt Ltd | Hyderabad, India</div>
+                  <ul>
+                    <li>Supported and maintained enterprise retail applications for the IKEA client, ensuring high application availability and operational stability.</li>
+                    <li>Monitored daily batch jobs, scheduled processes, and application health using enterprise monitoring tools, investigating failures and ensuring successful completion of business-critical workflows.</li>
+                    <li>Wrote and optimized complex SQL Server queries to analyze transactional data, troubleshoot production issues, validate business data, and improve query performance.</li>
+                    <li>Executed SQL scripts for data correction, reconciliation, and production data fixes while maintaining data integrity and compliance with business requirements.</li>
+                    <li>Performed root cause analysis by investigating application logs, database records, and monitoring alerts, resolving production incidents within agreed SLA timelines.</li>
+                    <li>Validated backend services and REST APIs using Postman, collaborating with development and QA teams to verify fixes before production deployment.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="r-section">
+                <h4 class="r-title">Projects</h4>
+                <div class="r-exp-item">
+                  <div class="r-exp-meta">
+                    <strong>Payroll Management System</strong>
+                    <span>Jul 2026 – Aug 2026</span>
+                  </div>
+                  <div class="r-company">ASP.NET Core, Entity Framework Core, React.js, SQL Server</div>
+                  <ul>
+                    <li>Developed a full-stack payroll management application using ASP.NET Core 8, React.js, Entity Framework Core, and SQL Server following Clean Architecture principles.</li>
+                    <li>Designed secure RESTful APIs for employee management, attendance, leave, payroll processing, and salary generation with JWT authentication and Role-Based Access Control (RBAC).</li>
+                    <li>Implemented payroll calculation workflows and optimized SQL Server queries and Entity Framework Core operations to improve performance.</li>
+                    <li>Built responsive React.js user interfaces using Hooks and Axios, and integrated Swagger, Postman, Git, and EF Core Code-First Migrations throughout development.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-col side">
+              <div class="r-section">
+                <h4 class="r-title">Technical Skills</h4>
+                <div class="r-tags">
+                  <span>.NET Core 6/7/8</span>
+                  <span>ASP.NET Web API</span>
+                  <span>C#</span>
+                  <span>EF Core</span>
+                  <span>LINQ</span>
+                  <span>Microservices</span>
+                  <span>SignalR</span>
+                  <span>Microsoft Azure</span>
+                  <span>Azure Service Bus</span>
+                  <span>Azure AD</span>
+                  <span>Azure DevOps</span>
+                  <span>CI/CD</span>
+                  <span>Docker</span>
+                  <span>MSSQL</span>
+                  <span>Query Optimisation</span>
+                  <span>Clean Architecture</span>
+                  <span>OAuth 2.0 / JWT</span>
+                  <span>RBAC</span>
+                  <span>Redis</span>
+                  <span>React.js (Axios/Hooks)</span>
+                  <span>Swagger</span>
+                  <span>Postman</span>
+                  <span>Git/GitHub</span>
+                  <span>Jira</span>
+                  <span>Agile/Scrum</span>
+                </div>
+              </div>
+
+              <div class="r-section">
+                <h4 class="r-title">Education</h4>
+                <div style="margin-bottom: 1rem;">
+                  <p><strong>Postgraduate - Electronics</strong></p>
+                  <p class="r-company">Queen's University Belfast, UK (Sep 2022 – Jun 2024)</p>
+                  <p class="text-muted" style="font-size:0.85rem;">Coursework: Advanced System Modelling, Technical Problem Solving, Data Analysis.</p>
+                </div>
+                <div>
+                  <p><strong>Bachelors - Electronics &amp; Communications</strong></p>
+                  <p class="r-company">VNR Vignana Jyothi Institute of Engineering, India (Jun 2016 – Sep 2020)</p>
+                  <p class="text-muted" style="font-size:0.85rem;">Coursework: Object-Oriented Programming (C#), Data Structures, Microprocessors.</p>
+                </div>
+              </div>
+
+              <div class="r-section">
+                <h4 class="r-title">Certifications</h4>
+                <p><strong>C# Masterclass – Advanced C# Programming</strong></p>
+                <p class="r-company">Issued Dec 2025</p>
+              </div>
+
+              <div class="r-section">
+                <h4 class="r-title">Contact</h4>
+                <p class="text-muted">📍 Hyderabad, India</p>
+                <p class="text-muted">📞 +91 8019013757</p>
+                <p class="text-muted">✉️ shanmukagaddam98@gmail.com</p>
+                <p class="text-muted">🌐 github.com/shannug98</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-contact" id="contact">
+      <div class="container text-center">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="section-title">Let's Build Together</h2>
+        <p class="lead max-w-2xl">
+          Looking for a .NET Full Stack Developer, backend microservices specialist, or transaction system architect?
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:shanmukagaddam98@gmail.com" class="button button-primary button-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            Email Shanmuka
+          </a>
+          <a href="tel:+918019013757" class="button button-secondary button-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call +91 8019013757
+          </a>
+          <a href="https://github.com/shannug98" target="_blank" rel="noreferrer" class="button button-ghost button-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub @shannug98
+          </a>
+        </div>
+
+        <!-- Quick Message Form Mockup -->
+        <div class="contact-form-card">
+          <h3>Send a Quick Message</h3>
+          <form id="contact-form">
+            <div class="form-row">
+              <input type="text" id="name" placeholder="Your Name" required class="form-input" />
+              <input type="email" id="email" placeholder="Your Email" required class="form-input" />
+            </div>
+            <textarea id="message" placeholder="Hi Shanmuka, I'd like to discuss an opportunity..." rows="4" required class="form-input"></textarea>
+            <button type="submit" class="button button-primary w-full">Send Message</button>
+            <div class="form-alert" id="form-alert">✓ Thank you! Message sent successfully. I will get back to you shortly.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-logo">SG</span>
+        <span>© 2026 Shanmuka Gaddam. .NET Full Stack Developer.</span>
+      </div>
+      <a href="#main" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Modals for Detailed Case Studies -->
+  
+  <!-- Payroll Modal -->
+  <div class="modal" id="modal-payroll">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-header">
+        <p class="eyebrow">Case Study Detail</p>
+        <h2>Payroll Management System</h2>
+      </div>
+      <div class="modal-body">
+        <p><strong>Overview:</strong> Full-stack payroll management application built using ASP.NET Core 8, React.js, Entity Framework Core, and SQL Server following Clean Architecture principles.</p>
+        <h4>Key Technical Highlights:</h4>
+        <ul>
+          <li><strong>Clean Architecture:</strong> Strict separation of Concerns ensuring zero business logic leakage into API controllers or React UI.</li>
+          <li><strong>RESTful API Design:</strong> Endpoints for employee management, attendance, leave, payroll processing, and salary slips.</li>
+          <li><strong>Security &amp; JWT/RBAC:</strong> Token-based authentication with Role-Based Access Control protecting sensitive financial records.</li>
+          <li><strong>React.js Integration:</strong> Responsive frontend built with Axios, Hooks, and Bootstrap consuming ASP.NET Core APIs.</li>
+        </ul>
+        <div class="modal-footer">
+          <a href="https://github.com/shannug98/Payroll-Management-System" target="_blank" rel="noreferrer" class="button button-primary">View GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banking Microservices Modal -->
+  <div class="modal" id="modal-banking">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-header">
+        <p class="eyebrow">Case Study Detail</p>
+        <h2>Banking &amp; Transaction Processing Microservices</h2>
+      </div>
+      <div class="modal-body">
+        <p><strong>Overview:</strong> Distributed microservices system built for Bienes Technosoft (Manchester, UK &amp; Chennai, India) handling 50K+ daily banking transactions.</p>
+        <h4>Key Technical Highlights:</h4>
+        <ul>
+          <li><strong>ACID &amp; Double-Entry Ledger:</strong> Workflows engineered for financial accuracy, consistency, and auditability across payment operations.</li>
+          <li><strong>Azure Service Bus:</strong> Asynchronous event-driven communication enabling reliable inter-microservice messaging.</li>
+          <li><strong>Redis Distributed Lock:</strong> Prevents duplicate fund transfer transactions during concurrent requests.</li>
+          <li><strong>SQL Query Optimization:</strong> Index tuning and EF Core optimization reducing API response time from 1.8s to under 700ms.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- IKEA Retail Modal -->
+  <div class="modal" id="modal-ikea">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-header">
+        <p class="eyebrow">Case Study Detail</p>
+        <h2>Enterprise Retail Applications (Capgemini / IKEA Client)</h2>
+      </div>
+      <div class="modal-body">
+        <p><strong>Overview:</strong> Enterprise retail application support and maintenance at Capgemini for global retail operations.</p>
+        <h4>Key Technical Highlights:</h4>
+        <ul>
+          <li><strong>Batch Job &amp; Health Monitoring:</strong> Daily process execution monitoring ensuring business-critical workflows complete.</li>
+          <li><strong>SQL Server Query Tuning:</strong> Complex transactional data analysis, query optimization, and production data fixes.</li>
+          <li><strong>Incident Resolution SLA:</strong> Fast root-cause investigation using application logs, monitoring alerts, and Postman API validation.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
